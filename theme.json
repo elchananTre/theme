@@ -1,502 +1,1420 @@
 {
-  "theme": {
-    "name": "Amethyst Core",
-    "language": "C#",
-    "ide": "Rider / JetBrains",
+  "_info": {
+    "name": "JetBrains Pro Themes — Full Suite",
     "variant": "dark",
     "author": "Custom Pro Theme",
+    "ides": {
+      "python": "PyCharm Professional",
+      "csharp": "Rider",
+      "javascript": "WebStorm",
+      "typescript": "WebStorm",
+      "java": "IntelliJ IDEA",
+      "kotlin": "IntelliJ IDEA"
+    },
     "imported_from": [
-      "Carbon.jar — WebStorm (JSTHEME)",
-      "Dark_purple.jar — IntelliJ IDEA"
-    ]
+      "Carbon.jar — WebStorm theme (JSTHEME)",
+      "Dark_purple.jar — IntelliJ IDEA theme"
+    ],
+    "notes": "All _carbon and _dark_purple fields show the original imported value for reference."
   },
-  "background": {
-    "editor": "#091526",
-    "gutter": "#20202B",
-    "panel": "#0C1829",
-    "statusBar": "#060410",
-    "titleBar": "#080612",
-    "lineHighlight": "#242433",
-    "selection": "#1E2B50",
-    "selectionForeground": "#C9C9D1",
-    "findMatch": "#214D3A",
-    "breakpointLine": "#662F38",
-    "matchedBracketBg": "#4E4766",
-    "matchedBracketFont": "bold",
-    "indentGuide": "#393747",
-    "selectedIndentGuide": "#424052",
-    "foldedCode": {
-      "background": "#313866"
-    },
-    "console": "#1D1D26",
-    "documentation": "#2C2C3B",
-    "diffInserted": "#1E4723",
-    "diffDeleted": "#474754",
-    "diffModified": "#135280",
-    "diffConflict": "#732936",
-    "diffSeparator": "#3E3E57",
-    "notification": "#4A2D59",
-    "_dark_purple_source": "Dark purple.xml colors section"
-  },
-  "syntax": {
-    "keywords": {
-      "examples": [
-        "class",
-        "void",
-        "using",
-        "namespace",
-        "new",
-        "this",
-        "base",
-        "public",
-        "private",
-        "protected",
-        "static",
-        "readonly",
-        "const",
-        "sealed",
-        "abstract"
-      ],
-      "color": "#CE93D8",
-      "bold": true,
-      "_carbon": "#B6647D",
-      "_dark_purple": "#E0957B"
-    },
-    "controlFlow": {
-      "examples": [
-        "if",
-        "else",
-        "switch",
-        "case",
-        "for",
-        "foreach",
-        "while",
-        "do",
-        "break",
-        "continue",
-        "return",
-        "throw",
-        "try",
-        "catch",
-        "finally"
-      ],
-      "color": "#B388FF",
-      "bold": true
-    },
-    "asyncKeywords": {
-      "examples": [
-        "async",
-        "await",
-        "Task",
-        "ValueTask"
-      ],
-      "color": "#A8D8A8"
-    },
-    "strings": {
-      "examples": [
-        "\"hello world\"",
-        "@\"verbatim\""
-      ],
-      "color": "#62A362",
-      "_carbon": "#9ADB6E",
-      "_dark_purple": "#62A362"
-    },
-    "interpolatedString": {
-      "body_color": "#62A362",
-      "expression_color": "#FFAB91",
-      "braces_color": "#FF7043"
-    },
-    "stringEscapeValid": {
-      "color": "#E0957B",
-      "italic": true,
-      "_dark_purple": "#E0957B"
-    },
-    "stringEscapeInvalid": {
-      "color": "#62A362",
-      "underline": "#DD3962",
-      "_dark_purple": "#DD3962"
-    },
-    "numbers": {
-      "examples": [
-        "42",
-        "3.14f",
-        "0xFF",
-        "1_000_000",
-        "1.5m"
-      ],
-      "color": "#4DACF0",
-      "_dark_purple": "#4DACF0",
-      "_carbon": "#F2C4B3"
-    },
-    "methodDefinition": {
-      "examples": [
-        "void MyMethod()",
-        "int Calculate()"
-      ],
-      "color": "#C7A65D",
-      "bold": false,
-      "_dark_purple": "#C7A65D",
-      "_carbon": "#6ED2DB"
-    },
-    "methodCall": {
-      "examples": [
-        "MyMethod()",
-        "obj.Calculate()"
-      ],
-      "color": "#C9C9D1",
-      "_dark_purple": "inherits DEFAULT_IDENTIFIER"
-    },
-    "instanceMethod": {
-      "examples": [
-        "this.DoWork()"
-      ],
-      "color": "#F9B5AC",
-      "italic": true,
-      "_carbon": "#F9B5AC"
-    },
-    "staticMethod": {
-      "examples": [
-        "static void Main",
-        "Math.Abs()"
-      ],
-      "color": "#C7A65D",
-      "bold": true,
-      "_dark_purple": "#C7A65D"
-    },
-    "extensionMethod": {
-      "examples": [
-        ".Where()",
-        ".Select()",
-        "str.IsNullOrEmpty()"
-      ],
-      "color": "#C9C9D1",
-      "underline": true
-    },
-    "constructor": {
-      "examples": [
-        "public MyClass()",
-        "new MyClass()"
-      ],
-      "color": "#FFECB3",
-      "bold": true
-    },
-    "privateMethod": {
-      "examples": [
-        "private void _helper()"
-      ],
-      "color": "#607D8B"
-    },
-    "classDefinition": {
-      "examples": [
-        "class MyService",
-        "public class User"
-      ],
-      "color": "#FFECB3",
-      "bold": true
-    },
-    "structDefinition": {
-      "examples": [
-        "struct Point",
-        "readonly struct Vector"
-      ],
-      "color": "#FFECB3",
-      "italic": true
-    },
-    "interfaceDefinition": {
-      "examples": [
-        "interface IService",
-        "IDisposable"
-      ],
-      "color": "#4DB6AC",
-      "italic": true
-    },
-    "enumDefinition": {
-      "examples": [
-        "enum Status"
-      ],
-      "color": "#FFD180"
-    },
-    "enumMember": {
-      "examples": [
-        "Status.Active",
-        "Color.Red"
-      ],
-      "color": "#FFD180"
-    },
-    "typeNames": {
-      "examples": [
-        "int",
-        "string",
-        "bool",
-        "double",
-        "float",
-        "decimal"
-      ],
-      "color": "#B39DDB"
-    },
-    "genericTypeParam": {
-      "examples": [
-        "T",
-        "TResult",
-        "TKey"
-      ],
-      "color": "#37CCCC",
-      "italic": true,
-      "_dark_purple": "#37CCCC"
-    },
-    "typeParameter": {
-      "color": "#37CCCC",
-      "_dark_purple": "#37CCCC"
-    },
-    "parameters": {
-      "examples": [
-        "string name",
-        "int count",
-        "T item"
-      ],
-      "color": "#F48FB1"
-    },
-    "attributes": {
-      "examples": [
-        "[Serializable]",
-        "[HttpGet]",
-        "[Required]"
-      ],
-      "color": "#85A658",
-      "_dark_purple": "#85A658",
-      "_carbon": "#B87EA2"
-    },
-    "linqKeywords": {
-      "examples": [
-        "from",
-        "select",
-        "where",
-        "orderby",
-        "group",
-        "join"
-      ],
-      "color": "#80CBC4"
-    },
-    "operators": {
-      "examples": [
-        "=",
-        "+",
-        "-",
-        "*",
-        "=>",
-        "==",
-        "!=",
-        "??",
-        "?."
-      ],
-      "color": "#C9C9D1",
-      "_dark_purple": "#C9C9D1"
-    },
-    "constants": {
-      "examples": [
-        "const int MAX = 100",
-        "readonly string ID"
-      ],
-      "color": "#93A6F5",
-      "_dark_purple": "#93A6F5"
-    },
-    "instanceField": {
-      "examples": [
-        "this._name",
-        "_count"
-      ],
-      "color": "#93A6F5",
-      "_dark_purple": "#93A6F5"
-    },
-    "staticField": {
-      "examples": [
-        "MyClass._instance"
-      ],
-      "color": "#93A6F5",
-      "bold": true,
-      "_dark_purple": "#93A6F5"
-    },
-    "nullableAnnotation": {
-      "examples": [
-        "string?",
-        "int?",
-        "MyClass?"
-      ],
-      "color": "#EF9A9A"
-    },
-    "specialConstants": {
-      "examples": [
-        "null",
-        "true",
-        "false",
-        "default"
-      ],
-      "color": "#EF9A9A",
-      "bold": true
-    },
-    "comments": {
-      "examples": [
-        "// single line",
-        "/* block */"
-      ],
-      "color": "#676773",
-      "italic": true,
-      "_carbon": "#5D6976",
-      "_dark_purple": "#676773"
-    },
-    "xmlDocComment": {
-      "examples": [
-        "/// <summary>"
-      ],
-      "color": "#5A6E5A",
-      "italic": true,
-      "_dark_purple": "#5A6E5A"
-    },
-    "xmlDocTag": {
-      "examples": [
-        "<summary>",
-        "<param>",
-        "<returns>"
-      ],
-      "color": "#5A6E5A",
-      "_dark_purple": "#5A6E5A"
-    },
-    "xmlDocTagValue": {
-      "color": "#8C6154",
-      "_dark_purple": "#8C6154"
-    },
-    "preprocessor": {
-      "examples": [
-        "#if",
-        "#else",
-        "#endif",
-        "#region",
-        "#endregion"
-      ],
-      "color": "#8D9E5A",
-      "italic": true
-    },
-    "metadata": {
-      "examples": [
-        "[Obsolete]"
-      ],
-      "color": "#E0967B",
-      "_dark_purple": "#E0967B"
-    },
-    "punctuation": {
-      "braces": {
-        "color": "#5F6272",
-        "_carbon": "#5F6272"
+  "shared": {
+    "_comment": "These values are shared across ALL languages and IDEs",
+    "background": {
+      "editor": "#0A1628",
+      "gutter": "#172030",
+      "panel": "#0A1628",
+      "statusBar": "#04101E",
+      "titleBar": "#07101E",
+      "lineHighlight": "#1E2A3E",
+      "selection": "#25334B",
+      "selectionForeground": "#C9CCCD",
+      "findMatch": "#214D3A",
+      "breakpointLine": "#4B2234",
+      "matchedBracketBg": "#2A2000",
+      "matchedBracketBorder": "#515E6B",
+      "indentGuide": "#1E2E42",
+      "selectedIndentGuide": "#687586",
+      "foldedCode": {
+        "foreground": "#BAC8CB",
+        "background": "#1E2A3E"
       },
-      "brackets": {
-        "color": "#5F6272",
-        "_carbon": "#5F6272"
+      "console": "#172030",
+      "documentation": "#172030",
+      "diffInserted": "#082F3B",
+      "diffDeleted": "#4B2234",
+      "diffModified": "#1E2A3E",
+      "diffSeparator": "#214760"
+    },
+    "syntax": {
+      "strings": {
+        "color": "#9ADB6E",
+        "_carbon": "#9ADB6E",
+        "_dark_purple": "#62A362"
       },
-      "parentheses": {
-        "color": "#5F6272",
-        "_carbon": "#5F6272"
+      "stringEscapeValid": {
+        "color": "#73A7A7",
+        "italic": true
       },
-      "semicolons": {
-        "color": "#E0957B",
-        "_dark_purple": "#E0957B"
+      "stringEscapeInvalid": {
+        "color": "#FF4262",
+        "underline": true
       },
-      "commas": {
-        "color": "#E0957B",
-        "_dark_purple": "#E0957B"
+      "numbers": {
+        "color": "#F2C4B3",
+        "_carbon": "#F2C4B3"
+      },
+      "comments": {
+        "color": "#5D6976",
+        "italic": true,
+        "_carbon": "#5D6976"
+      },
+      "blockComments": {
+        "color": "#5D6976",
+        "italic": true
+      },
+      "operators": {
+        "color": "#6ED2DB",
+        "_carbon": "#6ED2DB"
+      },
+      "identifier": {
+        "color": "#C9CCCD",
+        "_carbon": "#C9CCCD"
+      },
+      "constants": {
+        "color": "#93A6F5",
+        "bold": true,
+        "_dark_purple": "#93A6F5"
+      },
+      "instanceField": {
+        "color": "#93A6F5",
+        "_dark_purple": "#93A6F5"
+      },
+      "staticField": {
+        "color": "#93A6F5",
+        "bold": true,
+        "_dark_purple": "#93A6F5"
+      },
+      "specialConstants": {
+        "color": "#EF9A9A",
+        "bold": true
+      },
+      "metadata": {
+        "color": "#B87EA2",
+        "italic": true,
+        "_carbon": "#B87EA2"
+      },
+      "label": {
+        "color": "#B87EA2"
+      },
+      "unusedVariable": {
+        "color": "#3D5A73",
+        "strikethrough": true
+      },
+      "punctuation": {
+        "braces": {
+          "color": "#5D5D65",
+          "_carbon": "#5D5D65"
+        },
+        "brackets": {
+          "color": "#5D5D65",
+          "_carbon": "#5D5D65"
+        },
+        "parentheses": {
+          "color": "#5D5D65",
+          "_carbon": "#5D5D65"
+        },
+        "semicolons": {
+          "color": "#DB6378",
+          "_carbon": "#DB6378"
+        },
+        "commas": {
+          "color": "#5D5D65"
+        },
+        "dot": {
+          "color": "#5F6272",
+          "_carbon": "#5F6272"
+        }
       }
     },
-    "identifier": {
-      "color": "#C9C9D1",
-      "_dark_purple": "#C9C9D1"
+    "diagnostics": {
+      "error": {
+        "underline": "#FF4262",
+        "stripe": "#FF4262",
+        "_carbon": "#FF4262",
+        "_dark_purple": "#DD3962"
+      },
+      "warning": {
+        "underline": "#E1D89F",
+        "stripe": "#E1D89F"
+      },
+      "info": {
+        "underline": "#4FC3F7"
+      },
+      "todo": {
+        "foreground": "#9DB324",
+        "bold": true,
+        "italic": true,
+        "_dark_purple": "#9DB324"
+      },
+      "unmatchedBrace": {
+        "foreground": "#FF4262"
+      },
+      "notUsed": {
+        "foreground": "#8C8C8C",
+        "underline": "#999999"
+      }
     },
-    "unusedVariable": {
-      "color": "#8C8C8C",
-      "strikethrough": true,
-      "_dark_purple": "#8C8C8C"
+    "console": {
+      "background": "#172030",
+      "normal": "#CDD3D3",
+      "error": "#FF4262",
+      "green": "#9CDE65",
+      "greenBright": "#9CDE65",
+      "blue": "#65B7EC",
+      "blueBright": "#65B7EC",
+      "cyan": "#3EB3B3",
+      "cyanBright": "#37CCCC",
+      "magenta": "#E084E0",
+      "magentaBright": "#FF96FF",
+      "yellow": "#D8DE90",
+      "yellowBright": "#E1E797",
+      "userInput": {
+        "color": "#8FD6E0",
+        "italic": true
+      }
+    },
+    "vcs": {
+      "added": "#9CDE65",
+      "modified": "#65B7EC",
+      "deleted": "#FF4262",
+      "merged": "#BD82C0",
+      "renamed": "#54BFBF",
+      "ignored": "#D8DE90"
+    },
+    "ui": {
+      "caret": "#FFFFFF",
+      "gutterBackground": "#172030",
+      "lineNumbers": "#465063",
+      "activeLineNumber": "#4FC3F7",
+      "indentGuide": "#1E2E42",
+      "selectedIndentGuide": "#687586",
+      "rightMargin": "#1E2E42",
+      "tearline": "#1E2E42",
+      "methodSeparator": "#3E4752",
+      "selectionBackground": "#25334B",
+      "selectionForeground": "#C9CCCD"
     }
   },
-  "diagnostics": {
-    "error": {
-      "underline": "#DD3962",
-      "stripe": "#DD3962",
-      "_dark_purple": "#DD3962"
+  "languages": {
+    "python": {
+      "_comment": "PyCharm · Cerulean Depths",
+      "accent": "#4FC3F7",
+      "keywords": {
+        "examples": [
+          "def",
+          "class",
+          "import",
+          "from",
+          "as",
+          "in",
+          "not",
+          "and",
+          "or",
+          "is",
+          "pass",
+          "with"
+        ],
+        "color": "#4FC3F7",
+        "bold": true
+      },
+      "controlFlow": {
+        "examples": [
+          "if",
+          "elif",
+          "else",
+          "for",
+          "while",
+          "break",
+          "continue",
+          "return",
+          "yield",
+          "raise",
+          "try",
+          "except",
+          "finally"
+        ],
+        "color": "#29B6F6",
+        "bold": true
+      },
+      "builtins": {
+        "examples": [
+          "print",
+          "len",
+          "range",
+          "super",
+          "type",
+          "isinstance",
+          "enumerate",
+          "zip",
+          "map",
+          "filter",
+          "open"
+        ],
+        "color": "#FF8A65",
+        "_carbon": "#F9B5AC"
+      },
+      "functionDefinition": {
+        "examples": [
+          "def my_function"
+        ],
+        "color": "#6ED2DB",
+        "_carbon": "#6ED2DB",
+        "_dark_purple": "#C7A65D"
+      },
+      "functionCall": {
+        "examples": [
+          "my_function()"
+        ],
+        "color": "#598AAF",
+        "_carbon": "#598AAF"
+      },
+      "instanceMethod": {
+        "examples": [
+          "self.do_something()"
+        ],
+        "color": "#F9B5AC",
+        "italic": true
+      },
+      "staticMethod": {
+        "examples": [
+          "@staticmethod"
+        ],
+        "color": "#F9B5AC",
+        "italic": true,
+        "bold": true
+      },
+      "magicMethods": {
+        "examples": [
+          "__init__",
+          "__str__",
+          "__repr__",
+          "__len__",
+          "__enter__",
+          "__exit__"
+        ],
+        "color": "#FF8A65"
+      },
+      "asyncFunction": {
+        "examples": [
+          "async def",
+          "await"
+        ],
+        "color": "#62CEAE"
+      },
+      "privateMethod": {
+        "examples": [
+          "_private",
+          "__mangled"
+        ],
+        "color": "#607D8B"
+      },
+      "constructor": {
+        "examples": [
+          "def __init__"
+        ],
+        "color": "#FFECB3"
+      },
+      "classDefinition": {
+        "examples": [
+          "class MyClass",
+          "class Dog(Animal)"
+        ],
+        "color": "#FFEFD5",
+        "bold": true
+      },
+      "selfParameter": {
+        "examples": [
+          "self",
+          "cls"
+        ],
+        "color": "#4DB6AC"
+      },
+      "parameters": {
+        "examples": [
+          "param",
+          "*args",
+          "**kwargs"
+        ],
+        "color": "#D0D6B5",
+        "_carbon": "#D0D6B5"
+      },
+      "typeHints": {
+        "examples": [
+          "int",
+          "str",
+          "float",
+          "bool",
+          "list",
+          "dict",
+          "Optional",
+          "Union",
+          "Tuple",
+          "Any"
+        ],
+        "color": "#CE93D8",
+        "italic": true
+      },
+      "decorators": {
+        "examples": [
+          "@property",
+          "@staticmethod",
+          "@classmethod",
+          "@dataclass",
+          "@abstractmethod"
+        ],
+        "color": "#C792EA",
+        "_carbon": "#C792EA"
+      },
+      "fString": {
+        "examples": [
+          "f\"Hello {name}\""
+        ],
+        "body_color": "#9ADB6E",
+        "expression_color": "#FFAB91",
+        "braces_color": "#FF7043"
+      },
+      "docstrings": {
+        "examples": [
+          "\"\"\"This is a docstring\"\"\""
+        ],
+        "color": "#5D6976",
+        "italic": true
+      },
+      "specialConstants": {
+        "examples": [
+          "None",
+          "True",
+          "False"
+        ],
+        "color": "#EF9A9A",
+        "bold": true
+      }
     },
-    "warning": {
-      "background": "#403618",
-      "stripe": "#BF8915",
-      "_dark_purple": "WARNING_ATTRIBUTES"
+    "csharp": {
+      "_comment": "Rider · Amethyst Core",
+      "accent": "#CE93D8",
+      "keywords": {
+        "examples": [
+          "class",
+          "void",
+          "using",
+          "namespace",
+          "new",
+          "this",
+          "base",
+          "public",
+          "private",
+          "protected",
+          "internal",
+          "static",
+          "readonly",
+          "const",
+          "sealed",
+          "abstract",
+          "override",
+          "virtual"
+        ],
+        "color": "#CE93D8",
+        "bold": true,
+        "_dark_purple": "#E0957B"
+      },
+      "controlFlow": {
+        "examples": [
+          "if",
+          "else",
+          "switch",
+          "case",
+          "for",
+          "foreach",
+          "while",
+          "do",
+          "break",
+          "continue",
+          "return",
+          "throw",
+          "try",
+          "catch",
+          "finally",
+          "when"
+        ],
+        "color": "#B388FF",
+        "bold": true
+      },
+      "asyncKeywords": {
+        "examples": [
+          "async",
+          "await",
+          "Task",
+          "ValueTask"
+        ],
+        "color": "#A8D8A8"
+      },
+      "methodDefinition": {
+        "examples": [
+          "void MyMethod()",
+          "int Calculate()"
+        ],
+        "color": "#C7A65D",
+        "_dark_purple": "#C7A65D"
+      },
+      "methodCall": {
+        "examples": [
+          "MyMethod()",
+          "obj.Calculate()"
+        ],
+        "color": "#C9C9D1"
+      },
+      "instanceMethod": {
+        "examples": [
+          "this.DoWork()"
+        ],
+        "color": "#F9B5AC",
+        "italic": true
+      },
+      "staticMethod": {
+        "examples": [
+          "static void Main",
+          "Math.Abs()"
+        ],
+        "color": "#C7A65D",
+        "bold": true
+      },
+      "extensionMethod": {
+        "examples": [
+          ".Where()",
+          ".Select()",
+          "str.IsNullOrEmpty()"
+        ],
+        "color": "#C9C9D1",
+        "underline": true
+      },
+      "constructor": {
+        "examples": [
+          "public MyClass()",
+          "new MyClass()"
+        ],
+        "color": "#FFECB3",
+        "bold": true
+      },
+      "classDefinition": {
+        "examples": [
+          "class MyService",
+          "public class User"
+        ],
+        "color": "#FFECB3",
+        "bold": true
+      },
+      "structDefinition": {
+        "examples": [
+          "struct Point",
+          "readonly struct Vector"
+        ],
+        "color": "#FFECB3",
+        "italic": true
+      },
+      "interfaceDefinition": {
+        "examples": [
+          "interface IService",
+          "IDisposable",
+          "IEnumerable<T>"
+        ],
+        "color": "#4DB6AC",
+        "italic": true
+      },
+      "enumDefinition": {
+        "examples": [
+          "enum Status",
+          "enum Color"
+        ],
+        "color": "#FFD180"
+      },
+      "enumMember": {
+        "examples": [
+          "Status.Active",
+          "Color.Red"
+        ],
+        "color": "#FFD180"
+      },
+      "typeNames": {
+        "examples": [
+          "int",
+          "string",
+          "bool",
+          "double",
+          "float",
+          "decimal",
+          "char",
+          "object",
+          "dynamic",
+          "var"
+        ],
+        "color": "#B39DDB"
+      },
+      "genericTypeParam": {
+        "examples": [
+          "T",
+          "TResult",
+          "TKey",
+          "TValue"
+        ],
+        "color": "#37CCCC",
+        "italic": true,
+        "_dark_purple": "#37CCCC"
+      },
+      "parameters": {
+        "examples": [
+          "string name",
+          "int count",
+          "T item"
+        ],
+        "color": "#F48FB1"
+      },
+      "attributes": {
+        "examples": [
+          "[Serializable]",
+          "[HttpGet]",
+          "[Required]",
+          "[Obsolete]"
+        ],
+        "color": "#85A658",
+        "_dark_purple": "#85A658"
+      },
+      "linqKeywords": {
+        "examples": [
+          "from",
+          "select",
+          "where",
+          "orderby",
+          "group",
+          "join",
+          "into",
+          "let"
+        ],
+        "color": "#80CBC4"
+      },
+      "nullableAnnotation": {
+        "examples": [
+          "string?",
+          "int?",
+          "MyClass?"
+        ],
+        "color": "#EF9A9A"
+      },
+      "specialConstants": {
+        "examples": [
+          "null",
+          "true",
+          "false",
+          "default",
+          "this",
+          "base"
+        ],
+        "color": "#EF9A9A",
+        "bold": true
+      },
+      "xmlDocComment": {
+        "examples": [
+          "/// <summary>This does X</summary>"
+        ],
+        "color": "#5A6E5A",
+        "italic": true,
+        "_dark_purple": "#5A6E5A"
+      },
+      "xmlDocTag": {
+        "examples": [
+          "<summary>",
+          "<param>",
+          "<returns>",
+          "<remarks>",
+          "<exception>"
+        ],
+        "color": "#5A6E5A"
+      },
+      "xmlDocTagValue": {
+        "examples": [
+          "name in <param name=\"name\">"
+        ],
+        "color": "#8C6154",
+        "_dark_purple": "#8C6154"
+      },
+      "preprocessor": {
+        "examples": [
+          "#if",
+          "#else",
+          "#endif",
+          "#region",
+          "#endregion",
+          "#define",
+          "#pragma"
+        ],
+        "color": "#8D9E5A",
+        "italic": true
+      }
     },
-    "info": {
-      "underline": "#B39500"
+    "javascript": {
+      "_comment": "WebStorm · Carbon-based (from JSTHEME.jar)",
+      "accent": "#FF6AC1",
+      "keywords": {
+        "examples": [
+          "var",
+          "let",
+          "const",
+          "function",
+          "class",
+          "return",
+          "import",
+          "export",
+          "from",
+          "default",
+          "extends",
+          "super",
+          "new",
+          "delete",
+          "typeof",
+          "instanceof",
+          "in",
+          "of"
+        ],
+        "color": "#FF6AC1",
+        "_carbon": "#FF6AC1"
+      },
+      "controlFlow": {
+        "examples": [
+          "if",
+          "else",
+          "switch",
+          "case",
+          "for",
+          "while",
+          "do",
+          "break",
+          "continue",
+          "return",
+          "throw",
+          "try",
+          "catch",
+          "finally"
+        ],
+        "color": "#FF6AC1",
+        "bold": true
+      },
+      "asyncKeywords": {
+        "examples": [
+          "async",
+          "await",
+          "Promise"
+        ],
+        "color": "#62CEAE",
+        "_carbon": "#62CEAE"
+      },
+      "functionDeclaration": {
+        "examples": [
+          "function myFunc()",
+          "const fn = () =>"
+        ],
+        "color": "#4AD988",
+        "_carbon": "#4AD988"
+      },
+      "globalFunction": {
+        "examples": [
+          "setTimeout",
+          "fetch",
+          "console.log"
+        ],
+        "color": "#4AD988",
+        "bold": true,
+        "_carbon": "#4AD988"
+      },
+      "localFunction": {
+        "examples": [
+          "function localHelper()"
+        ],
+        "color": "#4AD988"
+      },
+      "instanceMethod": {
+        "examples": [
+          "obj.method()"
+        ],
+        "color": "#4AD990",
+        "bold": true,
+        "_carbon": "#4AD990"
+      },
+      "staticMethod": {
+        "examples": [
+          "MyClass.create()"
+        ],
+        "color": "#4AD988",
+        "bold": true
+      },
+      "exportedFunction": {
+        "examples": [
+          "export function handler()"
+        ],
+        "color": "#4AD988",
+        "_carbon": "#4AD988"
+      },
+      "arrowFunction": {
+        "examples": [
+          "const fn = () => {}"
+        ],
+        "color": "#62CEAE",
+        "_carbon": "#62CEAE"
+      },
+      "classDefinition": {
+        "examples": [
+          "class MyComponent"
+        ],
+        "color": "#96E6B3",
+        "bold": true,
+        "_carbon_ts": "#96E6B3"
+      },
+      "parameters": {
+        "examples": [
+          "function foo(param)",
+          "(x, y) =>"
+        ],
+        "color": "#ECDAB5",
+        "_carbon": "#ECDAB5"
+      },
+      "localVariable": {
+        "examples": [
+          "let count",
+          "const name"
+        ],
+        "color": "#FFFFFF",
+        "_carbon": "#FFFFFF"
+      },
+      "instanceVariable": {
+        "examples": [
+          "this.count",
+          "this.name"
+        ],
+        "color": "#73C4C4",
+        "bold": true,
+        "_carbon": "#73C4C4"
+      },
+      "globalVariable": {
+        "examples": [
+          "window",
+          "document",
+          "globalThis"
+        ],
+        "color": "#C9CCCD"
+      },
+      "decorator": {
+        "examples": [
+          "@Component",
+          "@Injectable",
+          "@Input"
+        ],
+        "color": "#C792EA",
+        "_carbon": "#C792EA"
+      },
+      "strings": {
+        "examples": [
+          "\"hello\"",
+          "'world'",
+          "`template`"
+        ],
+        "color": "#9FE58D",
+        "_carbon": "#9FE58D"
+      },
+      "templateLiteral": {
+        "examples": [
+          "`Hello ${name}`"
+        ],
+        "body_color": "#9FE58D",
+        "expression_color": "#FFAB91",
+        "braces_color": "#FF7043"
+      },
+      "numbers": {
+        "examples": [
+          "42",
+          "3.14",
+          "0xFF",
+          "NaN",
+          "Infinity"
+        ],
+        "color": "#EEAA67",
+        "_carbon": "#EEAA67"
+      },
+      "regexp": {
+        "examples": [
+          "/pattern/gi"
+        ],
+        "color": "#BD7D7D",
+        "_carbon": "#BD7D7D"
+      },
+      "operationSign": {
+        "examples": [
+          "=",
+          "+",
+          "===",
+          "!==",
+          "&&",
+          "||",
+          "??"
+        ],
+        "color": "#D98AA4",
+        "_carbon": "#D98AA4"
+      },
+      "specialConstants": {
+        "examples": [
+          "null",
+          "undefined",
+          "true",
+          "false",
+          "NaN",
+          "Infinity"
+        ],
+        "color": "#EF9A9A",
+        "bold": true
+      },
+      "comments": {
+        "examples": [
+          "// comment",
+          "/* block */"
+        ],
+        "color": "#5D6976",
+        "italic": true
+      },
+      "jsxComponent": {
+        "examples": [
+          "<MyComponent />",
+          "<App>"
+        ],
+        "color": "#69B5CB",
+        "_carbon": "#69B5CB"
+      }
     },
-    "todo": {
-      "foreground": "#9DB324",
-      "bold": true,
-      "_dark_purple": "#9DB324"
+    "typescript": {
+      "_comment": "WebStorm · Extends JS, adds TS-specific tokens (Carbon-based)",
+      "accent": "#4DB8FF",
+      "_extends": "javascript — all JS tokens apply, only overrides listed here",
+      "keywords": {
+        "examples": [
+          "type",
+          "interface",
+          "enum",
+          "namespace",
+          "declare",
+          "abstract",
+          "implements",
+          "readonly",
+          "as",
+          "satisfies",
+          "keyof",
+          "typeof",
+          "infer",
+          "is"
+        ],
+        "color": "#FF6AC1",
+        "bold": true
+      },
+      "typeAnnotation": {
+        "examples": [
+          "string",
+          "number",
+          "boolean",
+          "any",
+          "unknown",
+          "never",
+          "void",
+          "object"
+        ],
+        "color": "#96E6B3",
+        "_carbon_ts": "#96E6B3"
+      },
+      "typeAlias": {
+        "examples": [
+          "type MyType = string | number"
+        ],
+        "color": "#96E6B3",
+        "bold": true,
+        "_carbon_ts": "#96E6B3"
+      },
+      "interfaceDefinition": {
+        "examples": [
+          "interface User { name: string }"
+        ],
+        "color": "#96E6B3",
+        "italic": true
+      },
+      "genericTypeParam": {
+        "examples": [
+          "T",
+          "TResult",
+          "<T extends string>"
+        ],
+        "color": "#D0D6B5",
+        "_carbon": "#D0D6B5"
+      },
+      "enumDefinition": {
+        "examples": [
+          "enum Direction { Up, Down }"
+        ],
+        "color": "#FFD180"
+      },
+      "enumMember": {
+        "examples": [
+          "Direction.Up"
+        ],
+        "color": "#FFD180"
+      },
+      "decorator": {
+        "examples": [
+          "@Component",
+          "@Injectable",
+          "@Input",
+          "@Output"
+        ],
+        "color": "#C792EA"
+      },
+      "arrowFunction": {
+        "examples": [
+          "const fn = (): void => {}"
+        ],
+        "color": "#4DB8FF",
+        "_carbon_ts": "#4DB8FF"
+      },
+      "operationSign": {
+        "examples": [
+          "=",
+          "+",
+          "===",
+          "as",
+          "??",
+          "?."
+        ],
+        "color": "#4DB8FF",
+        "_carbon_ts": "#4DB8FF"
+      },
+      "typeGuard": {
+        "examples": [
+          "x is string",
+          "asserts x is number"
+        ],
+        "color": "#1D5D4E",
+        "background": "#1D5D4E",
+        "_carbon_ts": "#1D5D4E"
+      },
+      "typeParameter": {
+        "examples": [
+          "<T>",
+          "<K, V>"
+        ],
+        "color": "#D0D6B5"
+      },
+      "nullableOperator": {
+        "examples": [
+          "x?.name",
+          "x ?? 'default'"
+        ],
+        "color": "#4DB8FF"
+      }
     },
-    "unmatchedBrace": {
-      "foreground": "#F23F6C",
-      "_dark_purple": "#F23F6C"
+    "java": {
+      "_comment": "IntelliJ IDEA · Dark Purple-based",
+      "accent": "#C7A65D",
+      "keywords": {
+        "examples": [
+          "class",
+          "interface",
+          "enum",
+          "extends",
+          "implements",
+          "new",
+          "this",
+          "super",
+          "return",
+          "import",
+          "package",
+          "public",
+          "private",
+          "protected",
+          "static",
+          "final",
+          "abstract",
+          "synchronized",
+          "volatile",
+          "transient"
+        ],
+        "color": "#E0957B",
+        "bold": true,
+        "_dark_purple": "#E0957B"
+      },
+      "controlFlow": {
+        "examples": [
+          "if",
+          "else",
+          "switch",
+          "case",
+          "for",
+          "while",
+          "do",
+          "break",
+          "continue",
+          "return",
+          "throw",
+          "try",
+          "catch",
+          "finally",
+          "throws"
+        ],
+        "color": "#E0957B",
+        "bold": true
+      },
+      "methodDefinition": {
+        "examples": [
+          "public void doWork()",
+          "private int calculate()"
+        ],
+        "color": "#C7A65D",
+        "_dark_purple": "#C7A65D"
+      },
+      "methodCall": {
+        "examples": [
+          "obj.doWork()",
+          "calculate()"
+        ],
+        "color": "#C9C9D1"
+      },
+      "staticMethod": {
+        "examples": [
+          "Collections.sort()",
+          "Math.abs()"
+        ],
+        "color": "#C7A65D",
+        "bold": true,
+        "_dark_purple": "#C7A65D"
+      },
+      "constructor": {
+        "examples": [
+          "new MyClass()",
+          "public MyClass()"
+        ],
+        "color": "#FFECB3",
+        "bold": true
+      },
+      "classDefinition": {
+        "examples": [
+          "class MyService",
+          "public class User"
+        ],
+        "color": "#FFECB3",
+        "bold": true
+      },
+      "interfaceDefinition": {
+        "examples": [
+          "interface Runnable",
+          "Comparable<T>"
+        ],
+        "color": "#4DB6AC",
+        "italic": true
+      },
+      "enumDefinition": {
+        "examples": [
+          "enum Status { ACTIVE, INACTIVE }"
+        ],
+        "color": "#FFD180"
+      },
+      "enumMember": {
+        "examples": [
+          "Status.ACTIVE",
+          "Day.MONDAY"
+        ],
+        "color": "#FFD180"
+      },
+      "annotation": {
+        "examples": [
+          "@Override",
+          "@Deprecated",
+          "@SuppressWarnings",
+          "@Autowired",
+          "@NotNull"
+        ],
+        "color": "#85A658",
+        "_dark_purple": "#85A658"
+      },
+      "parameters": {
+        "examples": [
+          "String name",
+          "int count",
+          "T item"
+        ],
+        "color": "#D0D6B5"
+      },
+      "instanceField": {
+        "examples": [
+          "this.name",
+          "this.count"
+        ],
+        "color": "#93A6F5",
+        "_dark_purple": "#93A6F5"
+      },
+      "staticField": {
+        "examples": [
+          "MyClass.INSTANCE",
+          "Thread.MAX_PRIORITY"
+        ],
+        "color": "#93A6F5",
+        "bold": true
+      },
+      "typeNames": {
+        "examples": [
+          "String",
+          "Integer",
+          "List",
+          "Map",
+          "Optional",
+          "void",
+          "int",
+          "boolean"
+        ],
+        "color": "#B39DDB"
+      },
+      "genericTypeParam": {
+        "examples": [
+          "T",
+          "E",
+          "K",
+          "V",
+          "? extends T"
+        ],
+        "color": "#37CCCC",
+        "italic": true,
+        "_dark_purple": "#37CCCC"
+      },
+      "localVariable": {
+        "examples": [
+          "String name = \"\"",
+          "int x = 0"
+        ],
+        "color": "#C9C9D1"
+      },
+      "specialConstants": {
+        "examples": [
+          "null",
+          "true",
+          "false",
+          "this",
+          "super"
+        ],
+        "color": "#EF9A9A",
+        "bold": true
+      },
+      "javadocComment": {
+        "examples": [
+          "/** This method does X */"
+        ],
+        "color": "#5A6E5A",
+        "italic": true,
+        "_dark_purple": "#5A6E5A"
+      },
+      "javadocTag": {
+        "examples": [
+          "@param",
+          "@return",
+          "@throws",
+          "@see",
+          "@since",
+          "@deprecated"
+        ],
+        "color": "#5A6E5A",
+        "italic": true,
+        "underline": true
+      },
+      "javadocTagValue": {
+        "examples": [
+          "name in @param name the name"
+        ],
+        "color": "#8C6154"
+      },
+      "implicitAnonymousParam": {
+        "examples": [
+          "new Runnable() { ... }"
+        ],
+        "color": "#93A6F5",
+        "underline": true,
+        "_dark_purple": "#93A6F5"
+      }
     },
-    "notUsed": {
-      "foreground": "#8C8C8C",
-      "underline": "#999999",
-      "_dark_purple": "NOT_USED_ELEMENT"
+    "kotlin": {
+      "_comment": "IntelliJ IDEA · Extends Java with Kotlin-specific tokens",
+      "accent": "#4DACF0",
+      "_extends": "java — all Java tokens apply, only overrides and additions listed",
+      "keywords": {
+        "examples": [
+          "fun",
+          "val",
+          "var",
+          "object",
+          "companion",
+          "data",
+          "sealed",
+          "inline",
+          "reified",
+          "suspend",
+          "override",
+          "operator",
+          "infix",
+          "tailrec",
+          "crossinline",
+          "noinline",
+          "external",
+          "expect",
+          "actual"
+        ],
+        "color": "#E0957B",
+        "bold": true,
+        "_dark_purple": "#E0957B"
+      },
+      "controlFlow": {
+        "examples": [
+          "if",
+          "else",
+          "when",
+          "for",
+          "while",
+          "do",
+          "return",
+          "throw",
+          "try",
+          "catch",
+          "finally",
+          "break",
+          "continue"
+        ],
+        "color": "#E0957B",
+        "bold": true
+      },
+      "suspendFunction": {
+        "examples": [
+          "suspend fun fetchData()",
+          "coroutineScope { }"
+        ],
+        "color": "#A8D8A8"
+      },
+      "lambdaArrow": {
+        "examples": [
+          "{ x -> x + 1 }",
+          "list.map { it * 2 }"
+        ],
+        "color": "#62CEAE"
+      },
+      "extensionFunction": {
+        "examples": [
+          "fun String.isEmail()",
+          "fun List<T>.second()"
+        ],
+        "color": "#C7A65D",
+        "underline": true
+      },
+      "namedArgument": {
+        "examples": [
+          "foo(name = \"bar\", count = 3)"
+        ],
+        "color": "#4DACF0",
+        "_dark_purple": "#4DACF0"
+      },
+      "label": {
+        "examples": [
+          "loop@for",
+          "return@map"
+        ],
+        "color": "#4DACF0",
+        "_dark_purple": "#4DACF0"
+      },
+      "annotation": {
+        "examples": [
+          "@JvmStatic",
+          "@Suppress",
+          "@Composable",
+          "@Serializable"
+        ],
+        "color": "#E0967B",
+        "_dark_purple": "#E0967B"
+      },
+      "dataClass": {
+        "examples": [
+          "data class User(val name: String)"
+        ],
+        "color": "#FFECB3",
+        "bold": true
+      },
+      "sealedClass": {
+        "examples": [
+          "sealed class Result"
+        ],
+        "color": "#FFECB3",
+        "bold": true,
+        "italic": true
+      },
+      "companionObject": {
+        "examples": [
+          "companion object { }"
+        ],
+        "color": "#FFD180"
+      },
+      "stringTemplate": {
+        "examples": [
+          "\"Hello $name\"",
+          "\"${user.name}\""
+        ],
+        "body_color": "#9ADB6E",
+        "expression_color": "#FFAB91",
+        "dollar_color": "#FF7043"
+      },
+      "smartCast": {
+        "examples": [
+          "if (x is String) x.length"
+        ],
+        "background": "#1D5D4E",
+        "_dark_purple": "#1D5D4E"
+      },
+      "typeParameter": {
+        "examples": [
+          "<T : Comparable<T>>",
+          "reified T"
+        ],
+        "color": "#37CCCC"
+      },
+      "specialConstants": {
+        "examples": [
+          "null",
+          "true",
+          "false",
+          "Unit",
+          "Nothing",
+          "it"
+        ],
+        "color": "#EF9A9A",
+        "bold": true
+      },
+      "backingField": {
+        "examples": [
+          "field in custom getter/setter"
+        ],
+        "color": "#93A6F5"
+      },
+      "dynamicCall": {
+        "examples": [
+          "dynamic.property",
+          "dynamic.method()"
+        ],
+        "color": "#C9C9D1",
+        "bold": true
+      }
     }
-  },
-  "console": {
-    "background": "#1D1D26",
-    "normal": "#C9C9D1",
-    "error": "#F23F6C",
-    "errorBright": "#F23F6C",
-    "green": "#499936",
-    "greenBright": "#54B33E",
-    "blue": "#2EB8E6",
-    "blueBright": "#33CCFF",
-    "cyan": "#3EB3B3",
-    "cyanBright": "#37CCCC",
-    "magenta": "#E084E0",
-    "magentaBright": "#FF96FF",
-    "yellow": "#E6AA5C",
-    "yellowBright": "#FFBF66",
-    "userInput": {
-      "color": "#54B33E",
-      "bold": true
-    },
-    "_source": "Dark purple.xml"
-  },
-  "vcs": {
-    "added": "#76B366",
-    "modified": "#62BAF5",
-    "deleted": "#7A7A99",
-    "merged": "#B78FCC",
-    "renamed": "#54BFBF",
-    "ignored": "#C78BA1",
-    "unknown": "#BF8060",
-    "_source": "Dark purple.xml filestatus"
-  },
-  "ui": {
-    "caret": "#FFFFFF",
-    "gutterBackground": "#20202B",
-    "lineNumbers": "#575566",
-    "activeLineNumber": "#575566",
-    "indentGuide": "#393747",
-    "selectedIndentGuide": "#424052",
-    "rightMargin": "#373445",
-    "tearline": "#403A52",
-    "methodSeparator": "#48415C",
-    "selectionBackground": "#1E2B50",
-    "selectionForeground": "#C9C9D1",
-    "foldedTextBorder": "#495BB3",
-    "notificationBg": "#4A2D59",
-    "writeHighlight": {
-      "background": "#6B2B6B",
-      "stripe": "#BF3BBF"
-    },
-    "readHighlight": {
-      "background": "#113623",
-      "stripe": "#268053"
-    },
-    "_source": "Dark purple.xml colors section"
   }
 }
