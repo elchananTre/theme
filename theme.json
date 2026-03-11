@@ -1,0 +1,502 @@
+{
+  "theme": {
+    "name": "Amethyst Core",
+    "language": "C#",
+    "ide": "Rider / JetBrains",
+    "variant": "dark",
+    "author": "Custom Pro Theme",
+    "imported_from": [
+      "Carbon.jar — WebStorm (JSTHEME)",
+      "Dark_purple.jar — IntelliJ IDEA"
+    ]
+  },
+  "background": {
+    "editor": "#091526",
+    "gutter": "#20202B",
+    "panel": "#0C1829",
+    "statusBar": "#060410",
+    "titleBar": "#080612",
+    "lineHighlight": "#242433",
+    "selection": "#1E2B50",
+    "selectionForeground": "#C9C9D1",
+    "findMatch": "#214D3A",
+    "breakpointLine": "#662F38",
+    "matchedBracketBg": "#4E4766",
+    "matchedBracketFont": "bold",
+    "indentGuide": "#393747",
+    "selectedIndentGuide": "#424052",
+    "foldedCode": {
+      "background": "#313866"
+    },
+    "console": "#1D1D26",
+    "documentation": "#2C2C3B",
+    "diffInserted": "#1E4723",
+    "diffDeleted": "#474754",
+    "diffModified": "#135280",
+    "diffConflict": "#732936",
+    "diffSeparator": "#3E3E57",
+    "notification": "#4A2D59",
+    "_dark_purple_source": "Dark purple.xml colors section"
+  },
+  "syntax": {
+    "keywords": {
+      "examples": [
+        "class",
+        "void",
+        "using",
+        "namespace",
+        "new",
+        "this",
+        "base",
+        "public",
+        "private",
+        "protected",
+        "static",
+        "readonly",
+        "const",
+        "sealed",
+        "abstract"
+      ],
+      "color": "#CE93D8",
+      "bold": true,
+      "_carbon": "#B6647D",
+      "_dark_purple": "#E0957B"
+    },
+    "controlFlow": {
+      "examples": [
+        "if",
+        "else",
+        "switch",
+        "case",
+        "for",
+        "foreach",
+        "while",
+        "do",
+        "break",
+        "continue",
+        "return",
+        "throw",
+        "try",
+        "catch",
+        "finally"
+      ],
+      "color": "#B388FF",
+      "bold": true
+    },
+    "asyncKeywords": {
+      "examples": [
+        "async",
+        "await",
+        "Task",
+        "ValueTask"
+      ],
+      "color": "#A8D8A8"
+    },
+    "strings": {
+      "examples": [
+        "\"hello world\"",
+        "@\"verbatim\""
+      ],
+      "color": "#62A362",
+      "_carbon": "#9ADB6E",
+      "_dark_purple": "#62A362"
+    },
+    "interpolatedString": {
+      "body_color": "#62A362",
+      "expression_color": "#FFAB91",
+      "braces_color": "#FF7043"
+    },
+    "stringEscapeValid": {
+      "color": "#E0957B",
+      "italic": true,
+      "_dark_purple": "#E0957B"
+    },
+    "stringEscapeInvalid": {
+      "color": "#62A362",
+      "underline": "#DD3962",
+      "_dark_purple": "#DD3962"
+    },
+    "numbers": {
+      "examples": [
+        "42",
+        "3.14f",
+        "0xFF",
+        "1_000_000",
+        "1.5m"
+      ],
+      "color": "#4DACF0",
+      "_dark_purple": "#4DACF0",
+      "_carbon": "#F2C4B3"
+    },
+    "methodDefinition": {
+      "examples": [
+        "void MyMethod()",
+        "int Calculate()"
+      ],
+      "color": "#C7A65D",
+      "bold": false,
+      "_dark_purple": "#C7A65D",
+      "_carbon": "#6ED2DB"
+    },
+    "methodCall": {
+      "examples": [
+        "MyMethod()",
+        "obj.Calculate()"
+      ],
+      "color": "#C9C9D1",
+      "_dark_purple": "inherits DEFAULT_IDENTIFIER"
+    },
+    "instanceMethod": {
+      "examples": [
+        "this.DoWork()"
+      ],
+      "color": "#F9B5AC",
+      "italic": true,
+      "_carbon": "#F9B5AC"
+    },
+    "staticMethod": {
+      "examples": [
+        "static void Main",
+        "Math.Abs()"
+      ],
+      "color": "#C7A65D",
+      "bold": true,
+      "_dark_purple": "#C7A65D"
+    },
+    "extensionMethod": {
+      "examples": [
+        ".Where()",
+        ".Select()",
+        "str.IsNullOrEmpty()"
+      ],
+      "color": "#C9C9D1",
+      "underline": true
+    },
+    "constructor": {
+      "examples": [
+        "public MyClass()",
+        "new MyClass()"
+      ],
+      "color": "#FFECB3",
+      "bold": true
+    },
+    "privateMethod": {
+      "examples": [
+        "private void _helper()"
+      ],
+      "color": "#607D8B"
+    },
+    "classDefinition": {
+      "examples": [
+        "class MyService",
+        "public class User"
+      ],
+      "color": "#FFECB3",
+      "bold": true
+    },
+    "structDefinition": {
+      "examples": [
+        "struct Point",
+        "readonly struct Vector"
+      ],
+      "color": "#FFECB3",
+      "italic": true
+    },
+    "interfaceDefinition": {
+      "examples": [
+        "interface IService",
+        "IDisposable"
+      ],
+      "color": "#4DB6AC",
+      "italic": true
+    },
+    "enumDefinition": {
+      "examples": [
+        "enum Status"
+      ],
+      "color": "#FFD180"
+    },
+    "enumMember": {
+      "examples": [
+        "Status.Active",
+        "Color.Red"
+      ],
+      "color": "#FFD180"
+    },
+    "typeNames": {
+      "examples": [
+        "int",
+        "string",
+        "bool",
+        "double",
+        "float",
+        "decimal"
+      ],
+      "color": "#B39DDB"
+    },
+    "genericTypeParam": {
+      "examples": [
+        "T",
+        "TResult",
+        "TKey"
+      ],
+      "color": "#37CCCC",
+      "italic": true,
+      "_dark_purple": "#37CCCC"
+    },
+    "typeParameter": {
+      "color": "#37CCCC",
+      "_dark_purple": "#37CCCC"
+    },
+    "parameters": {
+      "examples": [
+        "string name",
+        "int count",
+        "T item"
+      ],
+      "color": "#F48FB1"
+    },
+    "attributes": {
+      "examples": [
+        "[Serializable]",
+        "[HttpGet]",
+        "[Required]"
+      ],
+      "color": "#85A658",
+      "_dark_purple": "#85A658",
+      "_carbon": "#B87EA2"
+    },
+    "linqKeywords": {
+      "examples": [
+        "from",
+        "select",
+        "where",
+        "orderby",
+        "group",
+        "join"
+      ],
+      "color": "#80CBC4"
+    },
+    "operators": {
+      "examples": [
+        "=",
+        "+",
+        "-",
+        "*",
+        "=>",
+        "==",
+        "!=",
+        "??",
+        "?."
+      ],
+      "color": "#C9C9D1",
+      "_dark_purple": "#C9C9D1"
+    },
+    "constants": {
+      "examples": [
+        "const int MAX = 100",
+        "readonly string ID"
+      ],
+      "color": "#93A6F5",
+      "_dark_purple": "#93A6F5"
+    },
+    "instanceField": {
+      "examples": [
+        "this._name",
+        "_count"
+      ],
+      "color": "#93A6F5",
+      "_dark_purple": "#93A6F5"
+    },
+    "staticField": {
+      "examples": [
+        "MyClass._instance"
+      ],
+      "color": "#93A6F5",
+      "bold": true,
+      "_dark_purple": "#93A6F5"
+    },
+    "nullableAnnotation": {
+      "examples": [
+        "string?",
+        "int?",
+        "MyClass?"
+      ],
+      "color": "#EF9A9A"
+    },
+    "specialConstants": {
+      "examples": [
+        "null",
+        "true",
+        "false",
+        "default"
+      ],
+      "color": "#EF9A9A",
+      "bold": true
+    },
+    "comments": {
+      "examples": [
+        "// single line",
+        "/* block */"
+      ],
+      "color": "#676773",
+      "italic": true,
+      "_carbon": "#5D6976",
+      "_dark_purple": "#676773"
+    },
+    "xmlDocComment": {
+      "examples": [
+        "/// <summary>"
+      ],
+      "color": "#5A6E5A",
+      "italic": true,
+      "_dark_purple": "#5A6E5A"
+    },
+    "xmlDocTag": {
+      "examples": [
+        "<summary>",
+        "<param>",
+        "<returns>"
+      ],
+      "color": "#5A6E5A",
+      "_dark_purple": "#5A6E5A"
+    },
+    "xmlDocTagValue": {
+      "color": "#8C6154",
+      "_dark_purple": "#8C6154"
+    },
+    "preprocessor": {
+      "examples": [
+        "#if",
+        "#else",
+        "#endif",
+        "#region",
+        "#endregion"
+      ],
+      "color": "#8D9E5A",
+      "italic": true
+    },
+    "metadata": {
+      "examples": [
+        "[Obsolete]"
+      ],
+      "color": "#E0967B",
+      "_dark_purple": "#E0967B"
+    },
+    "punctuation": {
+      "braces": {
+        "color": "#5F6272",
+        "_carbon": "#5F6272"
+      },
+      "brackets": {
+        "color": "#5F6272",
+        "_carbon": "#5F6272"
+      },
+      "parentheses": {
+        "color": "#5F6272",
+        "_carbon": "#5F6272"
+      },
+      "semicolons": {
+        "color": "#E0957B",
+        "_dark_purple": "#E0957B"
+      },
+      "commas": {
+        "color": "#E0957B",
+        "_dark_purple": "#E0957B"
+      }
+    },
+    "identifier": {
+      "color": "#C9C9D1",
+      "_dark_purple": "#C9C9D1"
+    },
+    "unusedVariable": {
+      "color": "#8C8C8C",
+      "strikethrough": true,
+      "_dark_purple": "#8C8C8C"
+    }
+  },
+  "diagnostics": {
+    "error": {
+      "underline": "#DD3962",
+      "stripe": "#DD3962",
+      "_dark_purple": "#DD3962"
+    },
+    "warning": {
+      "background": "#403618",
+      "stripe": "#BF8915",
+      "_dark_purple": "WARNING_ATTRIBUTES"
+    },
+    "info": {
+      "underline": "#B39500"
+    },
+    "todo": {
+      "foreground": "#9DB324",
+      "bold": true,
+      "_dark_purple": "#9DB324"
+    },
+    "unmatchedBrace": {
+      "foreground": "#F23F6C",
+      "_dark_purple": "#F23F6C"
+    },
+    "notUsed": {
+      "foreground": "#8C8C8C",
+      "underline": "#999999",
+      "_dark_purple": "NOT_USED_ELEMENT"
+    }
+  },
+  "console": {
+    "background": "#1D1D26",
+    "normal": "#C9C9D1",
+    "error": "#F23F6C",
+    "errorBright": "#F23F6C",
+    "green": "#499936",
+    "greenBright": "#54B33E",
+    "blue": "#2EB8E6",
+    "blueBright": "#33CCFF",
+    "cyan": "#3EB3B3",
+    "cyanBright": "#37CCCC",
+    "magenta": "#E084E0",
+    "magentaBright": "#FF96FF",
+    "yellow": "#E6AA5C",
+    "yellowBright": "#FFBF66",
+    "userInput": {
+      "color": "#54B33E",
+      "bold": true
+    },
+    "_source": "Dark purple.xml"
+  },
+  "vcs": {
+    "added": "#76B366",
+    "modified": "#62BAF5",
+    "deleted": "#7A7A99",
+    "merged": "#B78FCC",
+    "renamed": "#54BFBF",
+    "ignored": "#C78BA1",
+    "unknown": "#BF8060",
+    "_source": "Dark purple.xml filestatus"
+  },
+  "ui": {
+    "caret": "#FFFFFF",
+    "gutterBackground": "#20202B",
+    "lineNumbers": "#575566",
+    "activeLineNumber": "#575566",
+    "indentGuide": "#393747",
+    "selectedIndentGuide": "#424052",
+    "rightMargin": "#373445",
+    "tearline": "#403A52",
+    "methodSeparator": "#48415C",
+    "selectionBackground": "#1E2B50",
+    "selectionForeground": "#C9C9D1",
+    "foldedTextBorder": "#495BB3",
+    "notificationBg": "#4A2D59",
+    "writeHighlight": {
+      "background": "#6B2B6B",
+      "stripe": "#BF3BBF"
+    },
+    "readHighlight": {
+      "background": "#113623",
+      "stripe": "#268053"
+    },
+    "_source": "Dark purple.xml colors section"
+  }
+}
